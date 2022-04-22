@@ -14,7 +14,8 @@ public class Main {
 
         System.out.println("Please enter temperature in Celsius :");
         int celsius = scanner.nextInt();
-        System.out.println("Temperature in Celsius is " + celsius + ".");
+        System.out.println("Temperature in Celsius :");
+        System.out.println( celsius );
 
 
         for(Temperature temperature: serviceLoader){
