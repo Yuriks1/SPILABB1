@@ -11,7 +11,12 @@ public class KelvinTemperature implements Temperature {
 
 
     @Override
-    public double Temperature(double c) {
+    public double transform(double c) {
         return c + 273.15;
+    }
+
+    @Override
+    public String getSymbol() {
+        return "K";
     }
 }

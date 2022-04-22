@@ -7,8 +7,14 @@ public class RankineTemperature implements Temperature {
     public RankineTemperature() {
         System.out.println("Temperature in Rankin :");
     }
+
     @Override
-    public double Temperature(double c) {
-      return (c * 9 / 5) + 491.67;
+    public double transform(double c) {
+        return (c * 9 / 5) + 491.67;
+    }
+
+    @Override
+    public String getSymbol() {
+        return "°Ra";
     }
 }

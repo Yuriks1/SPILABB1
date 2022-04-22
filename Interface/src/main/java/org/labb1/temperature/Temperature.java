@@ -2,5 +2,8 @@ package org.labb1.temperature;
 
 public interface Temperature {
 
-    double Temperature(double c);
+    double transform(double c);
+
+    String getSymbol();
+
 }

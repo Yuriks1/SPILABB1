@@ -10,7 +10,12 @@ public class FahrenheitTemperature implements Temperature {
     }
 
     @Override
-    public double Temperature(double c) {
-        return (c * 9/5) + 32;
+    public double transform(double c) {
+        return (c * 9 / 5) + 32;
+    }
+
+    @Override
+    public String getSymbol() {
+        return "°F";
     }
 }
