@@ -11,8 +11,7 @@ public class KelvinTemperature implements Temperature {
 
 
     @Override
-    public Double temperature() {
-
-        return 273.15;
+    public double Temperature(double c) {
+        return c + 273.15;
     }
 }

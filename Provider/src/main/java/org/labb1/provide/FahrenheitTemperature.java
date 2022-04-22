@@ -9,10 +9,8 @@ public class FahrenheitTemperature implements Temperature {
         System.out.println("Temperature in Fahrenheit :");
     }
 
-
     @Override
-    public Double temperature() {
-
-        return 32.0;
+    public double Temperature(double c) {
+        return (c * 9/5) + 32;
     }
 }

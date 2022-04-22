@@ -19,11 +19,15 @@ public class Main {
 
 
         for(Temperature temperature: serviceLoader){
+
             if (temperature.getClass().getSimpleName().startsWith("Kelvin"))
-            System.out.println(temperature.temperature() + celsius);
+            System.out.println(temperature.Temperature(celsius));
 
             else if(temperature.getClass().getSimpleName().startsWith("Fahrenheit"))
-                System.out.println(temperature.temperature() + (celsius * 9.0/5.0));
+                System.out.println(temperature.Temperature(celsius));
+
+            else if(temperature.getClass().getSimpleName().startsWith("Rankine"))
+                System.out.println(temperature.Temperature(celsius));
         }
     }
 }
